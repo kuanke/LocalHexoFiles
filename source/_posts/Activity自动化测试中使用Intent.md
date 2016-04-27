@@ -14,7 +14,7 @@ Intent传值。
 
 先看最简单的例子，所有的Activity都是通过"android.intent.action.MAIN"的action来启动：
 
-```
+```Java
 @SmallTest
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
@@ -31,7 +31,7 @@ public class MainActivityTest {
 ```
 现在来看如何在当前类所有的测试方法中使用同一个intent，同时又可传递参数：
 
-```
+```Java
 @SmallTest
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
@@ -57,7 +57,7 @@ public class MainActivityTest {
 ```
 如果你想让每个@Test方法都使用自己的Intent，那你可以这么做：
 
-```
+```Java
 @SmallTest
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
